@@ -1,0 +1,51 @@
+﻿:root {
+    --flor-burgundy: #7b1113;
+    --coffee-dark: #2c1e16;
+    --coffee-medium: #5a3d2b;
+    --cream-bg: #fdfbf7;
+    --white: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+body { background-color: var(--cream-bg); color: var(--coffee-dark); font-family: 'Montserrat', sans-serif; }
+h1, h2, h3, h4, .navbar-logo { font-family: 'Playfair Display', serif; }
+
+.navbar { position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 5%; background-color: rgba(253, 251, 247, 0.98); box-shadow: 0 2px 15px rgba(44, 30, 22, 0.08); z-index: 1000; }
+.navbar-logo { font-size: 1.8rem; font-weight: 700; color: var(--flor-burgundy); text-decoration: none;}
+.navbar-links { display: flex; list-style: none; gap: 2.5rem; }
+.navbar-links a { text-decoration: none; color: var(--coffee-dark); font-weight: 500; font-size: 0.9rem; transition: 0.3s;}
+.navbar-links a:hover { color: var(--flor-burgundy); }
+.navbar-btn { background-color: var(--flor-burgundy); color: var(--white); padding: 0.7rem 1.5rem; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 0.9rem; font-family: 'Montserrat', sans-serif;}
+
+.hero-section { height: 100vh; background-image: linear-gradient(rgba(44, 30, 22, 0.6), rgba(44, 30, 22, 0.7)), url('img/hero-cafe.jpg'); background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--white); padding: 0 20px; }
+.hero-section h1 { font-size: 4.5rem; font-weight: 700; margin-bottom: 1rem; letter-spacing: 1px;}
+.hero-section p { font-size: 1.2rem; max-width: 600px; margin-bottom: 2.5rem; line-height: 1.6; font-weight: 300;}
+.hero-btn { border: 2px solid var(--white); color: var(--white); padding: 1rem 2.5rem; font-weight: 600; text-transform: uppercase; text-decoration: none; transition: 0.3s; border-radius: 30px; letter-spacing: 1px;}
+.hero-btn:hover { background-color: var(--white); color: var(--coffee-dark); }
+
+.body-section { padding: 5rem 5%; }
+.body-header { text-align: center; margin-bottom: 4rem; }
+.body-header h2 { font-size: 2.8rem; color: var(--flor-burgundy); margin-bottom: 1rem; }
+.body-header p { color: var(--coffee-medium); font-size: 1.1rem; }
+
+.products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; }
+.product-card { background: var(--white); border-radius: 8px; overflow: hidden; box-shadow: 0 5px 20px rgba(44,30,22,0.06); transition: 0.3s; }
+.product-card:hover { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(44,30,22,0.12); }
+.product-card img { width: 100%; height: 260px; object-fit: cover; }
+.product-info { padding: 2rem; }
+.product-info h3 { font-size: 1.5rem; color: var(--coffee-dark); margin-bottom: 0.8rem; }
+.product-info p { font-size: 0.95rem; color: var(--coffee-medium); margin-bottom: 1.5rem; line-height: 1.6; }
+.product-link { color: var(--flor-burgundy); text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: 0.3s; display: inline-flex; align-items: center; gap: 5px;}
+.product-link:hover { color: var(--coffee-dark); gap: 10px; }
+
+.footer-section { background-color: var(--coffee-dark); color: var(--white); padding: 4rem 5% 2rem; }
+.footer-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; margin-bottom: 3rem; text-align: center;}
+.footer-column h4 { font-size: 1.3rem; margin-bottom: 1.5rem; color: #e8dbce;}
+.footer-column ul { list-style: none; }
+.footer-column ul a { color: #a38c7d; text-decoration: none; transition: 0.3s; line-height: 2.2; font-size: 0.95rem;}
+.footer-column ul a:hover { color: var(--white); }
+
+.footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid #4a3325; font-size: 0.85rem; color: #8c7362; }
+.social-icons { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1.5rem; }
+.social-icons a { color: #e8dbce; font-size: 1.3rem; transition: 0.3s ease; }
+.social-icons a:hover { color: var(--white); transform: translateY(-3px); }
