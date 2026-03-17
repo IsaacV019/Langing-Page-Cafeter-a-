@@ -13,7 +13,7 @@ h1, h2, h3, h4, .navbar-logo { font-family: 'Playfair Display', serif; }
 .navbar { position: fixed; top: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 1.2rem 5%; background-color: rgba(253, 251, 247, 0.98); box-shadow: 0 2px 15px rgba(44, 30, 22, 0.08); z-index: 1000; }
 .navbar-logo { font-size: 1.8rem; font-weight: 700; color: var(--flor-burgundy); text-decoration: none;}
 .navbar-links { display: flex; list-style: none; gap: 2.5rem; }
-.navbar-links a { text-decoration: none; color: var(--coffee-dark); font-weight: 500; font-size: 0.9rem; transition: 0.3s;}
+.navbar-links a { text-decoration: none; color: var(--coffee-dark); font-weight: 500; font-size: 1.2rem; transition: 0.3s;}
 .navbar-links a:hover { color: var(--flor-burgundy); }
 .navbar-btn { background-color: var(--flor-burgundy); color: var(--white); padding: 0.7rem 1.5rem; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 0.9rem; font-family: 'Montserrat', sans-serif;}
 
